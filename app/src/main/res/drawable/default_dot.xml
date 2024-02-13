@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:innerRadiusRatio="100"
+            android:innerRadius="3dp"
+            android:shape="ring"
+            android:thickness="3dp"
+            android:thicknessRatio="0.5"
+            android:useLevel="false">
+
+            <gradient
+                android:type="linear"
+                android:angle="180"
+                android:startColor="@color/pinch_next_gray"
+                android:centerColor="@color/pinch_next_gray"
+                android:endColor="@color/pinch_next_gray" />
+        </shape>
+    </item>
+</layer-list>

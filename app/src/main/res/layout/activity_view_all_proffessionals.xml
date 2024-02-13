@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewallproffessionals.activity.ActivityViewAllProffessionals">
+
+    <RelativeLayout
+        android:id="@+id/layout_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:orientation="vertical"
+                android:background="@drawable/sampleimage">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderAutoCycleEnabled="true"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorEnabled="false"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="5"
+                    app:sliderStartAutoCycle="true" />
+
+
+                <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20sp"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/new_back_icon"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    android:orientation="vertical"
+                    android:background="@color/black">
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rectangle_gray"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp">
+
+                        <RelativeLayout
+                            android:id="@+id/search_btn"
+                            android:layout_alignParentEnd="true"
+                            android:layout_width="50dp"
+                            android:background="@drawable/search_bg"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+
+                                android:id="@+id/search_visible"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="3dp"
+                                android:padding="5dp"
+                                android:src="@drawable/search_white"
+                                tools:ignore="ContentDescription" />
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/edi_search"
+                            android:background="@null"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="80dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="13sp"
+                            android:inputType="textCapWords"
+                            android:hint="@string/search_with_skills_and_name"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image_back"
+                    android:layout_marginStart="20sp"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/new_back_icon"/>
+
+                <TextView
+                    android:id="@+id/p1"
+                    android:layout_marginStart="10sp"
+                    android:text="@string/peoples_around_you"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/idNestedSV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MainActivity">
+
+                    <!--linear layout for displaying
+                        our recycler view-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <!--recycler view for displaying our list of data
+                            and we are making nested scroll for our
+                            recycler view as false-->
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/proff_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="5dp"
+                            android:nestedScrollingEnabled="false"
+                            />
+
+                        <!--we are adding progress bar
+                            for the purpose of loading-->
+                        <ProgressBar
+                            android:id="@+id/idPBLoading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

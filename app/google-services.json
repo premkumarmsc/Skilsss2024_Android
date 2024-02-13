@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "207055539639",
+    "firebase_url": "https://skill-1301.firebaseio.com",
+    "project_id": "skill-1301",
+    "storage_bucket": "skill-1301.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207055539639:android:1135dff682768b5d576c32",
+        "android_client_info": {
+          "package_name": "com.bannet.skils"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207055539639-t99a5aq2407ghp39s1733obuarf8ph13.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bannet.skils",
+            "certificate_hash": "bb62f6ca053bb7ebd957bb3f602d3a1c1a9d9b32"
+          }
+        },
+        {
+          "client_id": "207055539639-7i2g747iqdu1hrvbcqehfteu2m2s41td.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkQkvy3VobZ1aDhBACVI_vj-KYrBsniRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207055539639-7i2g747iqdu1hrvbcqehfteu2m2s41td.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "207055539639-11iuld7v3utmvgg1ssqg07vb3sje4s73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.baanet.skilsss"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

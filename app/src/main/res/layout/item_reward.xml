@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_15sdp"
+    android:layout_margin="@dimen/_10ssp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+
+                android:id="@+id/notscratch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:background="@drawable/scarch_card"/>
+
+
+
+            <RelativeLayout
+                android:background="@drawable/promo_bg"
+                android:layout_width="match_parent"
+                android:minHeight="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp">
+
+                <RelativeLayout
+                    android:background="@drawable/scratch_bgg"
+                    android:id="@+id/scratch"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/info"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginTop="@dimen/_4ssp"
+                            android:layout_marginEnd="@dimen/_4ssp"
+                            android:src="@drawable/info" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_centerHorizontal="true"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/type"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:text="flat"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_15sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/rate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="10RS"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_15sdp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Limited Users Only"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10sdp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_10ssp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Valid Until "
+                                android:textColor="@color/black"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+                            <TextView
+                                android:id="@+id/expirdate"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="April 30 2022"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/black"/>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_10ssp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/logo"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="40dp"/>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginRight="@dimen/_10ssp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:id="@+id/qr_imae"
+                                    android:layout_gravity="end"
+                                    android:layout_width="@dimen/_45ssp"
+                                    android:layout_height="@dimen/_45ssp"
+                                    android:src="@drawable/qr_image" />
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/coupen_code"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:text="dfiwejiowejdw"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_15sdp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/expired"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:background="@color/white"
+                android:alpha="0.4"/>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/expired_status"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_15sdp"
+                        android:text="Expired"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/completed"
+                android:visibility="gone"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:background="@color/white"
+                android:alpha="0.4"/>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/offersCompletedStatus"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_15sdp"
+                        android:text="Offers Completed"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

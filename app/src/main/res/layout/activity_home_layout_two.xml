@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/pinch_next_gray">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="200dp"
+                    android:id="@+id/linear_one">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginRight="180dp"
+                        android:text="Need Experienced Plumber"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+                        android:id="@+id/txt_name"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/linear_one">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:text="1 hour ago"
+                        android:textColor="@color/purple_200"
+                        android:textSize="12dp"
+                        android:layout_gravity="end"
+                        android:textAlignment="textEnd"
+                        android:padding="3dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:text="I need plumber for my home and school, if you are interested please message me."
+                        android:textColor="@color/lite_gray"
+                        android:textSize="13dp"
+                        android:textStyle="normal" />
+
+                <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="80dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="3dp"
+                      android:text=" Skills:"
+                      android:textColor="@color/black"
+                      android:textSize="14dp"
+                      android:textStyle="bold" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="3dp"
+                      android:text="Plumbing works, water, electrical board repair"
+                      android:textColor="@color/black"
+                      android:textSize="14dp"
+                      android:textStyle="normal"
+                      android:id="@+id/txt_skills"
+                      android:layout_weight="1"/>
+
+                  <ImageView
+                      android:id="@+id/img_chat_postings_new"
+                      android:layout_width="40dp"
+                      android:layout_height="40dp"
+                      android:layout_gravity="bottom"
+                      android:padding="6dp"
+                      android:layout_margin="5dp"
+                      android:src="@drawable/message"
+                      android:tint="@color/purple_200"/>
+              </LinearLayout>
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_one"
+            android:layout_width="200dp"
+            android:layout_height="125dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="5dp"
+            android:layout_alignParentEnd="true"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_skil_image"
+                android:id="@+id/img_profession"
+                android:scaleType="fitXY"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

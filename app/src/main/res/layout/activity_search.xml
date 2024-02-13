@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".searchpage.activity.ActivitySearchActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="210sp"
+                android:orientation="vertical"
+                android:layout_marginBottom="-2dp"
+                android:background="@drawable/sampleimage">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:sliderAnimationDuration="600"
+
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderAutoCycleEnabled="true"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorEnabled="false"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="5"
+                    app:sliderStartAutoCycle="true" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:orientation="vertical"
+                    android:background="@color/black">
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rectangle_gray"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp">
+
+                        <RelativeLayout
+                            android:id="@+id/search_btn"
+                            android:layout_alignParentEnd="true"
+                            android:layout_width="50dp"
+                            android:background="@drawable/search_bg"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+
+                                android:id="@+id/search_visible"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="3dp"
+                                android:padding="5dp"
+                                android:src="@drawable/search_white"
+                                tools:ignore="ContentDescription" />
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/edi_search"
+                            android:background="@null"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="80dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="13sp"
+                            android:hint="@string/search_with_skills_and_name"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:paddingBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_gravity="center_horizontal">
+
+                        <LinearLayout
+                            android:layout_marginEnd="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:layout_weight="1">
+                            <androidx.appcompat.widget.AppCompatButton
+
+                                android:id="@+id/user_btn"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/white"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/home_layout_bg"
+                                android:text="@string/users"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginEnd="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:layout_weight="1">
+
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/posting_btn"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/white"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:text="@string/postings"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/framLayout_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

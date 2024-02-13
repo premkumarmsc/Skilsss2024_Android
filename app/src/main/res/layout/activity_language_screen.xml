@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.bannet.skils.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@color/bg_clour"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/back_btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="2dp"
+                        android:src="@drawable/new_back_icon" />
+
+                    <TextView
+                        android:id="@+id/l_s_tv1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:text="@string/changeLanguage"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/l_s_tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/regional_language"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_language"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="10dp"
+                        android:id="@+id/language_malayalam"
+                        android:text="@string/malayalam"
+                        android:button="@drawable/laguage_radio_btn"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="12dp"
+                        android:paddingStart="10dp"
+                        android:id="@+id/language_hindi"
+                        android:text="@string/hindi"
+                        android:button="@drawable/laguage_radio_btn"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="12dp"
+                        android:paddingStart="10dp"
+                        android:id="@+id/language_tamil"
+                        android:text="@string/tamil"
+                        android:button="@drawable/laguage_radio_btn"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/l_s_tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/international_language"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/default_circle_indicator_stroke_width"
+                    android:background="@drawable/language_bg2"
+                    android:orientation="vertical">
+
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="12dp"
+                        android:paddingStart="10dp"
+                        android:id="@+id/language_english"
+                        android:text="@string/english"
+                        android:button="@drawable/laguage_radio_btn"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="10dp"
+                        android:id="@+id/language_french"
+                        android:text="@string/french"
+                        android:button="@drawable/laguage_radio_btn"/>
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="12dp"
+                        android:paddingStart="10dp"
+                        android:id="@+id/language_spanish"
+                        android:text="@string/spanish"
+                        android:button="@drawable/laguage_radio_btn"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="12dp"
+                        android:paddingStart="10dp"
+                        android:id="@+id/language_arabic"
+                        android:text="@string/arabic"
+                        android:button="@drawable/laguage_radio_btn"/>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="40dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/language_update_bg">
+
+                        <LinearLayout
+                            android:id="@+id/update_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/bg_blue"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp">
+
+                            <TextView
+                                android:id="@+id/l_s_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/next"
+                                android:textColor="@color/white" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/update_back_icon" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+

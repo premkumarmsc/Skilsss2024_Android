@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bannet.skils.Activitys.ActivitySettings">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@color/appcolour"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_back"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="2dp"
+                        android:src="@drawable/back_icon" />
+
+                    <TextView
+                        android:id="@+id/s11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/settings"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="140dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/setting_screen_editprofile_icon"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/s1"
+                                        android:layout_marginEnd="30dp"
+                                        android:ellipsize="marquee"
+                                        android:marqueeRepeatLimit="marquee_forever"
+                                        android:scrollHorizontally="true"
+                                        android:singleLine="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/editProfile"
+                                        android:textSize="18sp" />
+
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:padding="2dp"
+                                        android:src="@drawable/setting_page_arrow_icon" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/gray" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/privacy_policy"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/s2"
+                                        android:layout_marginEnd="30dp"
+                                        android:ellipsize="marquee"
+                                        android:marqueeRepeatLimit="marquee_forever"
+                                        android:scrollHorizontally="true"
+                                        android:singleLine="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/privacyPolicy"
+                                        android:textSize="18sp" />
+
+                                    <ImageView
+                                        android:id="@+id/setting_screen_privacy_icon"
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:padding="2dp"
+                                        android:src="@drawable/setting_page_arrow_icon" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/gray" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/terms_condition"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/s3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="30dp"
+                                        android:ellipsize="marquee"
+                                        android:marqueeRepeatLimit="marquee_forever"
+                                        android:scrollHorizontally="true"
+                                        android:singleLine="true"
+                                        android:text="@string/termsandConditions"
+                                        android:textSize="18sp" />
+
+
+                                    <ImageView
+                                        android:id="@+id/setting_screen_terms_icon"
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:padding="2dp"
+                                        android:src="@drawable/setting_page_arrow_icon" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/gray" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/btn_email_support"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/s4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="30dp"
+                                        android:ellipsize="marquee"
+                                        android:marqueeRepeatLimit="marquee_forever"
+                                        android:scrollHorizontally="true"
+                                        android:singleLine="true"
+                                        android:text="@string/emailSupport"
+                                        android:textSize="18sp" />
+
+                                    <ImageView
+                                        android:id="@+id/setting_screen_emailsupport_icon"
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:padding="2dp"
+                                        android:src="@drawable/setting_page_arrow_icon" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/gray" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/setting_screen_changelanguage_icon"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/s5"
+                                        android:layout_width="wrap_content"
+                                        android:scrollbars = "vertical"
+                                        android:maxLines="1"
+                                        android:layout_marginEnd="30dp"
+                                        android:ellipsize="marquee"
+                                        android:marqueeRepeatLimit="marquee_forever"
+                                        android:scrollHorizontally="true"
+                                        android:singleLine="true"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/changeLanguage"
+                                        android:textSize="18sp" />
+
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:padding="2dp"
+                                        android:src="@drawable/setting_page_arrow_icon" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/gray" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/setting_screen_myarnings_icon"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/s12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_marginEnd="30dp"
+                                        android:ellipsize="marquee"
+                                        android:marqueeRepeatLimit="marquee_forever"
+                                        android:scrollHorizontally="true"
+                                        android:singleLine="true"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/my_earnings"
+                                        android:textSize="18sp" />
+
+                                    <ImageView
+
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:padding="2dp"
+                                        android:src="@drawable/setting_page_arrow_icon" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/gray" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/setting_my_saved_postings"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/s6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="30dp"
+                                        android:ellipsize="marquee"
+                                        android:marqueeRepeatLimit="marquee_forever"
+                                        android:scrollHorizontally="true"
+                                        android:singleLine="true"
+                                        android:text="@string/saved_postings"
+                                        android:textSize="18sp" />
+
+                                    <ImageView
+
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:padding="2dp"
+                                        android:src="@drawable/setting_page_arrow_icon" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/gray" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/setting_screen_myfavourite_icon"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/s7"
+                                        android:layout_width="wrap_content"
+                                        android:layout_marginEnd="30dp"
+                                        android:ellipsize="marquee"
+                                        android:marqueeRepeatLimit="marquee_forever"
+                                        android:scrollHorizontally="true"
+                                        android:singleLine="true"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/myFavourites"
+                                        android:textSize="18sp" />
+
+                                    <ImageView
+
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:padding="2dp"
+                                        android:src="@drawable/setting_page_arrow_icon" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/gray" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/setting_screen_mypostings_icon"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/s8"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="30dp"
+                                        android:ellipsize="marquee"
+                                        android:marqueeRepeatLimit="marquee_forever"
+                                        android:scrollHorizontally="true"
+                                        android:singleLine="true"
+                                        android:text="@string/myPostings"
+                                        android:textSize="18sp" />
+
+                                    <ImageView
+
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:padding="2dp"
+                                        android:src="@drawable/setting_page_arrow_icon" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/gray" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/change_password"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/s9"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="30dp"
+                                        android:ellipsize="marquee"
+                                        android:marqueeRepeatLimit="marquee_forever"
+                                        android:scrollHorizontally="true"
+                                        android:singleLine="true"
+                                        android:text="@string/change_password"
+                                        android:textSize="18sp" />
+
+                                    <ImageView
+
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:padding="2dp"
+                                        android:src="@drawable/setting_page_arrow_icon" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </ScrollView>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_logout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="90dp"
+            android:background="@drawable/logout_bg_image">
+
+            <TextView
+                android:id="@+id/s10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/LOGOUT"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/screen_buttom_image">
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

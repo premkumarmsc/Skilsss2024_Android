@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bannet.skils.profile.activity.ActivityEditProfileScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_clour">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@color/bg_clour"
+                android:gravity="center">
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/edit_profile_screen_back_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="2dp"
+                    android:src="@drawable/new_back_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/e_p_s_tv1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:text="@string/edit_profile"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/delete_profile"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:layout_marginEnd="15dp"
+                        android:padding="4dp"
+                        android:src="@drawable/delete_icon" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <FrameLayout
+                android:id="@+id/main_act_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"/>
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <ScrollView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10sp"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+
+<!--                            <androidx.cardview.widget.CardView-->
+<!--                                android:layout_width="100dp"-->
+<!--                                android:layout_height="100dp"-->
+<!--                                android:padding="5dp"-->
+<!--                                android:layout_margin="5dp"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                app:cardCornerRadius="10dp">-->
+
+<!--                                <ImageView-->
+<!--                                    android:id="@+id/profileimage"-->
+<!--                                    android:layout_width="100dp"-->
+<!--                                    android:layout_height="100dp"-->
+<!--                                    android:layout_centerInParent="true"-->
+<!--                                    android:padding="7dp"-->
+<!--                                    android:src="@drawable/profile_image" />-->
+
+<!--                            </androidx.cardview.widget.CardView>-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:orientation="horizontal"-->
+<!--                                android:weightSum="2">-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent"-->
+<!--                                    android:layout_weight="1">-->
+
+<!--                                </LinearLayout>-->
+
+<!--&lt;!&ndash;                                <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:layout_marginLeft="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:layout_marginTop="40dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:layout_weight="1">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                    <RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                                        android:layout_height="match_parent">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                        <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                                            android:id="@+id/img_select"&ndash;&gt;-->
+<!--&lt;!&ndash;                                            android:layout_width="35dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                            android:layout_height="35dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                            android:layout_centerVertical="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                                            android:padding="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                            android:src="@drawable/add_icon" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                    </RelativeLayout>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </LinearLayout>&ndash;&gt;-->
+<!--                            </LinearLayout>-->
+<!--                        </RelativeLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="vertical">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginLeft="20dp"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginRight="20dp">-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent"-->
+<!--                                    android:orientation="vertical">-->
+
+<!--                                    <TextView-->
+<!--                                        android:id="@+id/h1"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:paddingBottom="10dp"-->
+<!--                                        android:text="@string/edi_firstname"/>-->
+
+<!--                                    <RelativeLayout-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="50dp"-->
+<!--                                        android:background="@drawable/curve_edit_profile">-->
+
+<!--                                        <EditText-->
+<!--                                            android:id="@+id/edit_your_first_name"-->
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="match_parent"-->
+<!--                                            android:layout_marginStart="10dp"-->
+<!--                                            android:layout_marginTop="10dp"-->
+<!--                                            android:layout_marginEnd="10dp"-->
+<!--                                            android:layout_marginBottom="10dp"-->
+<!--                                            android:background="@color/white"-->
+<!--                                            android:hint="@string/enterFirstName"-->
+<!--                                            android:textSize="15sp" />-->
+
+<!--                                    </RelativeLayout>-->
+
+<!--                                    <TextView-->
+<!--                                        android:id="@+id/h2"-->
+<!--                                        android:layout_marginTop="10dp"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:text="@string/edi_lastname"/>-->
+
+<!--                                    <RelativeLayout-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_marginTop="13dp"-->
+<!--                                        android:background="@drawable/curve_edit_profile">-->
+
+<!--                                        <EditText-->
+<!--                                            android:id="@+id/edit_your_last_name"-->
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="match_parent"-->
+<!--                                            android:layout_marginStart="10dp"-->
+<!--                                            android:layout_marginTop="10dp"-->
+<!--                                            android:layout_marginEnd="10dp"-->
+<!--                                            android:layout_marginBottom="10dp"-->
+<!--                                            android:background="@color/white"-->
+<!--                                            android:hint="@string/enterLastName"-->
+<!--                                            android:textSize="15sp" />-->
+
+<!--                                    </RelativeLayout>-->
+
+<!--                                    <TextView-->
+<!--                                        android:id="@+id/h3"-->
+<!--                                        android:layout_marginTop="10dp"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:text="@string/edi_company"/>-->
+
+<!--                                    <RelativeLayout-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="50dp"-->
+<!--                                        android:layout_marginTop="13dp"-->
+<!--                                        android:background="@drawable/curve_edit_profile">-->
+
+<!--                                        <EditText-->
+<!--                                            android:id="@+id/edit_your_company_name"-->
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="match_parent"-->
+<!--                                            android:layout_marginStart="10dp"-->
+<!--                                            android:layout_marginTop="10dp"-->
+<!--                                            android:layout_marginEnd="10dp"-->
+<!--                                            android:layout_marginBottom="10dp"-->
+<!--                                            android:background="@color/white"-->
+<!--                                            android:hint="@string/companyName"-->
+<!--                                            android:textSize="15sp" />-->
+
+<!--                                    </RelativeLayout>-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:id="@+id/h4"-->
+<!--                                        android:layout_marginTop="10dp"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:text="@string/edi_email"/>-->
+
+<!--                                    <RelativeLayout-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="50dp"-->
+<!--                                        android:layout_marginTop="13dp"-->
+<!--                                        android:background="@drawable/curve_edit_profile">-->
+
+<!--                                        <EditText-->
+<!--                                            android:id="@+id/edit_your_emailid"-->
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="match_parent"-->
+<!--                                            android:layout_marginStart="10dp"-->
+<!--                                            android:layout_marginTop="10dp"-->
+<!--                                            android:layout_marginEnd="10dp"-->
+<!--                                            android:layout_marginBottom="10dp"-->
+<!--                                            android:background="@color/white"-->
+<!--                                            android:hint="@string/emailID"-->
+<!--                                            android:textSize="15sp" />-->
+
+<!--                                    </RelativeLayout>-->
+
+<!--                                    <TextView-->
+<!--                                        android:id="@+id/h7"-->
+<!--                                        android:layout_marginTop="10dp"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:text="@string/edi_add"/>-->
+
+<!--                                    <RelativeLayout-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="60dp"-->
+<!--                                        android:layout_marginTop="13dp"-->
+<!--                                        android:background="@drawable/curve_edit_profile">-->
+
+<!--                                        <TextView-->
+<!--                                            android:id="@+id/edit_your_address"-->
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="match_parent"-->
+<!--                                            android:layout_marginStart="10dp"-->
+<!--                                            android:layout_marginEnd="50dp"-->
+<!--                                            android:background="@null"-->
+<!--                                            android:gravity="center"-->
+<!--                                            android:hint="@string/address"-->
+<!--                                            android:textSize="15sp" />-->
+
+<!--                                        <ImageView-->
+<!--                                            android:id="@+id/livelocation"-->
+<!--                                            android:layout_width="wrap_content"-->
+<!--                                            android:layout_height="wrap_content"-->
+<!--                                            android:layout_alignParentEnd="true"-->
+<!--                                            android:layout_centerVertical="true"-->
+<!--                                            android:layout_marginEnd="20dp"-->
+<!--                                            android:src="@drawable/ic_baseline_add_location_alt" />-->
+
+<!--                                    </RelativeLayout>-->
+
+<!--                                    <RelativeLayout-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="50dp">-->
+
+<!--                                        <TextView-->
+<!--                                            android:id="@+id/or"-->
+<!--                                            android:layout_width="wrap_content"-->
+<!--                                            android:layout_height="wrap_content"-->
+<!--                                            android:layout_centerInParent="true"-->
+<!--                                            android:text="@string/or"-->
+<!--                                            android:textSize="17sp" />-->
+
+
+
+<!--                                    </RelativeLayout>-->
+
+<!--                                    <RelativeLayout-->
+<!--                                        android:id="@+id/profilepage_add_country"-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="50dp"-->
+<!--                                        android:layout_marginTop="13dp"-->
+<!--                                        android:background="@drawable/curve_edit_profile">-->
+
+<!--                                        <TextView-->
+<!--                                            android:id="@+id/e_p_s_tv4"-->
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="match_parent"-->
+<!--                                            android:layout_marginStart="20dp"-->
+<!--                                            android:layout_marginTop="10dp"-->
+<!--                                            android:layout_marginEnd="40dp"-->
+<!--                                            android:layout_marginBottom="5dp"-->
+<!--                                            android:background="@color/white"-->
+<!--                                            android:text="@string/country_optional"-->
+<!--                                            android:textSize="15sp" />-->
+
+<!--                                        <ImageView-->
+
+<!--                                            android:layout_width="20dp"-->
+<!--                                            android:layout_height="20dp"-->
+<!--                                            android:layout_alignParentEnd="true"-->
+<!--                                            android:layout_centerVertical="true"-->
+<!--                                            android:layout_marginEnd="20dp"-->
+<!--                                            android:src="@drawable/arrow_selest_icon"-->
+<!--                                            android:tint="@color/gray" />-->
+
+<!--                                    </RelativeLayout>-->
+
+<!--                                    <RelativeLayout-->
+<!--                                        android:id="@+id/profilepage_add_state"-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="50dp"-->
+<!--                                        android:layout_marginTop="13dp"-->
+<!--                                        android:background="@drawable/curve_edit_profile">-->
+
+<!--                                        <TextView-->
+<!--                                            android:id="@+id/e_p_s_tv3"-->
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="match_parent"-->
+<!--                                            android:layout_marginStart="20dp"-->
+<!--                                            android:layout_marginTop="10dp"-->
+<!--                                            android:layout_marginEnd="40dp"-->
+<!--                                            android:layout_marginBottom="5dp"-->
+<!--                                            android:background="@color/white"-->
+<!--                                            android:text="@string/state_optional"-->
+<!--                                            android:textSize="15sp" />-->
+
+<!--                                        <ImageView-->
+
+<!--                                            android:layout_width="20dp"-->
+<!--                                            android:layout_height="20dp"-->
+<!--                                            android:layout_alignParentEnd="true"-->
+<!--                                            android:layout_centerVertical="true"-->
+<!--                                            android:layout_marginEnd="20dp"-->
+<!--                                            android:src="@drawable/arrow_selest_icon"-->
+<!--                                            android:tint="@color/gray" />-->
+
+<!--                                    </RelativeLayout>-->
+
+<!--                                    <RelativeLayout-->
+<!--                                        android:id="@+id/profilepage_add_district"-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="50dp"-->
+<!--                                        android:layout_marginTop="13dp"-->
+<!--                                        android:background="@drawable/curve_edit_profile">-->
+
+<!--                                        <TextView-->
+<!--                                            android:id="@+id/e_p_s_tv2"-->
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="match_parent"-->
+<!--                                            android:layout_marginStart="20dp"-->
+<!--                                            android:layout_marginTop="10dp"-->
+<!--                                            android:layout_marginEnd="40dp"-->
+<!--                                            android:layout_marginBottom="5dp"-->
+<!--                                            android:background="@color/white"-->
+<!--                                            android:text="@string/city"-->
+<!--                                            android:textSize="15sp" />-->
+
+<!--                                        <ImageView-->
+
+<!--                                            android:layout_width="20dp"-->
+<!--                                            android:layout_height="20dp"-->
+<!--                                            android:layout_alignParentEnd="true"-->
+<!--                                            android:layout_centerVertical="true"-->
+<!--                                            android:layout_marginEnd="20dp"-->
+<!--                                            android:src="@drawable/arrow_selest_icon"-->
+<!--                                            android:tint="@color/gray">-->
+
+<!--                                        </ImageView>-->
+<!--                                    </RelativeLayout>-->
+
+<!--                                    <TextView-->
+<!--                                        android:id="@+id/h8"-->
+<!--                                        android:layout_marginTop="10dp"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:text="@string/edi_certificate"/>-->
+
+<!--                                    <RelativeLayout-->
+<!--                                        android:id="@+id/relative_certificate"-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="50dp"-->
+<!--                                        android:layout_marginTop="13dp"-->
+<!--                                        android:background="@drawable/curve_edit_profile">-->
+
+<!--                                        <TextView-->
+<!--                                            android:id="@+id/e_p_s_tv5"-->
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="match_parent"-->
+<!--                                            android:layout_marginStart="10dp"-->
+<!--                                            android:layout_marginTop="10dp"-->
+<!--                                            android:layout_marginEnd="10dp"-->
+<!--                                            android:layout_marginBottom="10dp"-->
+<!--                                            android:background="@color/white"-->
+<!--                                            android:hint="@string/certification" />-->
+
+<!--                                        <RelativeLayout-->
+
+<!--                                            android:layout_width="25dp"-->
+<!--                                            android:layout_height="25dp"-->
+<!--                                            android:layout_alignParentEnd="true"-->
+<!--                                            android:layout_centerVertical="true"-->
+<!--                                            android:layout_marginEnd="15dp"-->
+<!--                                            android:background="@drawable/selectbtn_bg_round">-->
+
+<!--                                            <ImageView-->
+<!--                                                android:layout_width="10dp"-->
+<!--                                                android:layout_height="10dp"-->
+<!--                                                android:layout_centerInParent="true"-->
+<!--                                                android:src="@drawable/select_btn_icon" />-->
+<!--                                        </RelativeLayout>-->
+
+<!--                                    </RelativeLayout>-->
+
+<!--                                    <TextView-->
+<!--                                        android:id="@+id/h9"-->
+<!--                                        android:layout_marginTop="10dp"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:text="@string/edi_discription"/>-->
+
+<!--                                    <RelativeLayout-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="120dp"-->
+<!--                                        android:layout_marginTop="13dp"-->
+<!--                                        android:background="@drawable/curve_edit_profile">-->
+
+<!--                                        <EditText-->
+
+<!--                                            android:id="@+id/edit_your_description"-->
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="match_parent"-->
+<!--                                            android:layout_marginStart="10dp"-->
+<!--                                            android:layout_marginTop="10dp"-->
+<!--                                            android:layout_marginEnd="10dp"-->
+<!--                                            android:layout_marginBottom="10dp"-->
+<!--                                            android:background="@color/white"-->
+<!--                                            android:inputType="textCapSentences|textMultiLine"-->
+<!--                                            android:hint="@string/profileDescription"-->
+<!--                                            android:textSize="15sp" />-->
+
+<!--                                    </RelativeLayout>-->
+<!--                                </LinearLayout>-->
+
+<!--                            </RelativeLayout>-->
+<!--                            <RelativeLayout-->
+<!--                                android:layout_marginTop="40dp"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="100dp"-->
+<!--                                android:orientation="horizontal"-->
+<!--                                android:background="@drawable/edit_bottom_bg">-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:id="@+id/update_btn"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="50dp"-->
+<!--                                    android:layout_centerInParent="true"-->
+<!--                                    android:background="@drawable/bg_blue"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:orientation="horizontal"-->
+<!--                                    android:paddingLeft="20dp"-->
+<!--                                    android:paddingRight="20dp">-->
+
+<!--                                    <TextView-->
+<!--                                        android:id="@+id/e_p_s_tv7"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:text="@string/UPDATE"-->
+<!--                                        android:textColor="@color/white" />-->
+
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="30dp"-->
+<!--                                        android:layout_height="30dp"-->
+<!--                                        android:layout_marginLeft="20dp"-->
+<!--                                        android:src="@drawable/update_back_icon" />-->
+<!--                                </LinearLayout>-->
+
+<!--                            </RelativeLayout>-->
+<!--                        </LinearLayout>-->
+<!--                    </LinearLayout>-->
+<!--                </ScrollView>-->
+<!--            </RelativeLayout>-->
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

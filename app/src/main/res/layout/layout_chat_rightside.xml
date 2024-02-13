@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/linear_layout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="50dp">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:text="John Basco"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:id="@+id/txt_name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:text="Hi, I am fine, I accept this offer and I am ready to join"
+                android:textColor="@color/lite_gray"
+                android:textSize="14dp"
+                android:textStyle="normal"
+                android:id="@+id/txt_last_chat"
+                android:layout_marginTop="5dp"
+                android:textAlignment="textEnd"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_gravity="right">
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/sample_image_two" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="8dp"
+            android:src="@drawable/sample_profile"
+            android:id="@+id/img_chat"
+            android:layout_gravity="start"/>
+    </LinearLayout>
+
+</LinearLayout>
